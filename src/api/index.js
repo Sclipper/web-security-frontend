@@ -1,0 +1,6 @@
+export { default as authRegister } from './authRegister'
+export { default as authLogin } from './authLogin'
+export { default as authLogout } from './authLogout'
+export { default as getMe } from './getMe'
+export { default as upploadPhoto } from './upploadPhoto'
+export { default as getPhoto } from './getPhoto'
