@@ -33,10 +33,8 @@ const Register = () => {
     authRegister({email, password, name}).then(res => {
       history.push('/')
     }).catch(err => {
-      console.log('somethign failed', err)
       alert('Failed for some reason!')
     })
-
    }
 
   return (
