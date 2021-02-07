@@ -38,7 +38,6 @@ const Chat = ({ id }) => {
   }
   const handleSubmitRecipient = (e) => {
     e.preventDefault()
-    console.log("recipient", rec)
     if (rec.length > 5) {
       setRecipient(rec)
     }
