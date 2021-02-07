@@ -24,7 +24,6 @@ const Chat = ({ id }) => {
     if (!socket) return
 
     socket.on("receive-message", ({ recipients, sender, text }) => {
-      console.log("recipienasdfasdfasdts", recipients, sender, text)
       setMessageBox([...messageBox, { sender: sender, text }])
       setRecipient(sender)
     })
