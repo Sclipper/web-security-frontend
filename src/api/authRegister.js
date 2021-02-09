@@ -15,8 +15,5 @@ const authRegister = ({ email, password, name }) => {
     cookies.set("apiToken", data.token, { path: "/" })
     return data
   })
-  .catch(err => {
-    console.log('pachangameiner')
-  })
 }
 export default authRegister

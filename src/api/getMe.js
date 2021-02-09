@@ -7,8 +7,5 @@ const getMe = () => {
   .then(({ data }) => {
     return data
   })
-  .catch(err => {
-    console.log('pachangameiner')
-  })
 }
 export default getMe
