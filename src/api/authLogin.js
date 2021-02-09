@@ -15,5 +15,8 @@ const authLogin = ({ email, password }) => {
     cookies.set("apiToken", data.token, { path: "/" })
     return data.user
   })
+  .catch(err => {
+    console.log('pachangameiner')
+  })
 }
 export default authLogin

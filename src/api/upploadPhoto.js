@@ -19,5 +19,8 @@ const upploadPhoto = (keys) => {
       "Content-Type": "multipart/form-data",
     },
   })
+  .catch(err => {
+    console.log('pachangameiner')
+  })
 }
 export default upploadPhoto

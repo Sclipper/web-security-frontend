@@ -10,5 +10,8 @@ const authLogout = () => {
   .then(() => {
     cookies.set("apiToken", 'pachanga', { path: "/" })
   })
+  .catch(err => {
+    console.log('pachangameiner')
+  })
 }
 export default authLogout

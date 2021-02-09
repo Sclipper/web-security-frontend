@@ -7,5 +7,8 @@ const getPhoto = () => {
   .then((res) => {
     return res
   })
+  .catch(err => {
+    console.log('pachangameiner')
+  })
 }
 export default getPhoto
