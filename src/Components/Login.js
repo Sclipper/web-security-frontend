@@ -23,7 +23,6 @@ const Login = ({setUser, user}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('registier', email, password)
     authLogin({email, password}).then(res => {
       setUser(res)
       history.push('/')

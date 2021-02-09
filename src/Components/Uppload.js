@@ -43,14 +43,12 @@ const Uppload = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("submit")
     upploadPhoto({
       photo: files[0],
       title,
       description,
       visibility: isVisible,
     }).then(() => {
-      alert('success')
       setFiles([])
       setTitle('')
       setDescription('')

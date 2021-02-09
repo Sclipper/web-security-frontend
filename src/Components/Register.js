@@ -29,7 +29,6 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('registier', email, password, name)
     authRegister({email, password, name}).then(res => {
       history.push('/')
     }).catch(err => {

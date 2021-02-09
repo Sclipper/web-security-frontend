@@ -5,8 +5,6 @@ const getMe = () => {
     method: "get",
   })
   .then(({ data }) => {
-    console.log('dataa', data)
-    // cookies.set("apiToken", data.token, { path: "/" })
     return data
   })
 }
