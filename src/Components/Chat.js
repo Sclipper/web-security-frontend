@@ -11,7 +11,7 @@ const Chat = ({ id }) => {
   const [recipient, setRecipient] = React.useState("")
   const [rec, setRec] = React.useState("")
   React.useEffect(() => {
-    const newSocket = io(process.env.REACT_APP_CHAT_URL, {
+    const newSocket = io('http://198.211.102.66:3002', {
       query: { id },
     })
     setSocket(newSocket)
