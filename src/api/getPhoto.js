@@ -1,7 +1,7 @@
 import callAPI from "./callAPI"
 
-const getPhoto = () => {
-  return callAPI(`/photos/5fdb9aeb7a619d5b64f41f19`, {
+const getPhoto = (userId) => {
+  return callAPI(`/photos/${userId}`, {
     method: "get",
   })
   .then((res) => {

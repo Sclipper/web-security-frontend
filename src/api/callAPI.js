@@ -14,7 +14,8 @@ const callAPI = async (endpoint, request) => {
   cookies.get('apiKey')
   return axios({
     
-    url: `http://198.211.102.66:3001${endpoint}`,
+    // url: `http://198.211.102.66:3001${endpoint}`,
+    url: `http://localhost:3001${endpoint}`,
     method,
     timeout: 30000,
     headers: {

@@ -21,8 +21,10 @@ const Home = ({ user, setUser }) => {
   const [isChat, setIsChat] = React.useState(false)
 
   React.useEffect(() => {
-    if(!image){
-      getPhoto().then(res => {
+    if(!image && user?._id){
+      console.log('user?._id', user?._id)
+      getPhoto(user?._id).then(res => {
+        console.log('res', res)
         setImage(res.data)
       })
     }
@@ -37,6 +39,7 @@ const Home = ({ user, setUser }) => {
       <Typography variant="h4">Share your id with others: {user?._id} </Typography>
       <div>
       <Chat id={user?._id} />
+      <img width={450} height={550} src={`https://storage.cloud.google.com/pictures_bucket_web_sec_2/${image}.jpg`}/>
       </div>
     </div>
   )
